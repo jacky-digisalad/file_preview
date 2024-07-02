@@ -5,16 +5,18 @@ repository: https://github.com/DutchCodingCompany/file_preview
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.10.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  pdfx: ^2.4.0
+  pdfx:
+    git:
+      url: https://github.com/ScerIO/packages.flutter.git
+      path: packages/pdfx
   path: ^1.8.3
 
 dev_dependencies:
-  flutter_lints: ^2.0.2
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
 
